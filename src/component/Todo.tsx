@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTrash } from 'react-icons/fa';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { categoryArrState, ITodo, todoState } from '../atoms';
@@ -10,7 +11,11 @@ const Btn = styled.button`
   justify-content: center;
   align-items: center;
   border-left: rgba(0, 0, 0, 0.3) solid 1.5px;
-  padding: 0 0.5em;
+  padding: 0 0.8em;
+`;
+
+const DeleteBtn = styled(Btn)`
+  border: none;
 `;
 
 const Item = styled.li`
@@ -31,11 +36,15 @@ const Item = styled.li`
       border: none;
       border-left: white solid 1.5px;
     }
+    ${DeleteBtn} {
+      border: none;
+    }
   }
   span {
     flex: 1 1 50%;
     font-size: 1.2rem;
   }
+
   ${Btn}:last-child {
     border-radius: 0 0.5em 0.5em 0;
   }
@@ -73,9 +82,9 @@ export default function Todo({ text, id, category }: ITodo) {
   return (
     <Item>
       <span>{text}</span>
-      <Btn name='DELETE' onClick={onClick}>
-        Delete
-      </Btn>
+      <DeleteBtn name='DELETE' onClick={onClick}>
+        <FaTrash></FaTrash>
+      </DeleteBtn>
       {categories
         .filter((item) => item !== category)
         .map((category) => (

@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
-import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
 import styled from 'styled-components';
-import {
-  categoryArrState,
-  categoryState,
-  ITodo,
-  todoSelctor,
-  todoState,
-} from '../atoms';
+import { categoryArrState, categoryState, todoSelctor } from '../atoms';
 import CreateTodo from './CreateTodo';
 import Todo from './Todo';
 import { FaPlus } from 'react-icons/fa';
