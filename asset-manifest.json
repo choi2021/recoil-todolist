@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/recoil-todolist/static/css/main.abd64e84.css",
-    "main.js": "/recoil-todolist/static/js/main.085a191c.js",
+    "main.js": "/recoil-todolist/static/js/main.f4750de4.js",
     "index.html": "/recoil-todolist/index.html",
     "main.abd64e84.css.map": "/recoil-todolist/static/css/main.abd64e84.css.map",
-    "main.085a191c.js.map": "/recoil-todolist/static/js/main.085a191c.js.map"
+    "main.f4750de4.js.map": "/recoil-todolist/static/js/main.f4750de4.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.085a191c.js"
+    "static/js/main.f4750de4.js"
   ]
 }
